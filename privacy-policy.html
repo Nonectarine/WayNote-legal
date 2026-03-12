@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WayNote – Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 32px 24px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 6px; }
+    header p { color: #aaa; font-size: 0.95rem; }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 24px auto 0;
+    }
+    .lang-btn {
+      padding: 8px 28px;
+      border-radius: 24px;
+      border: 2px solid #fff;
+      background: transparent;
+      color: #fff;
+      font-size: 0.95rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: #fff;
+      color: #1a1a2e;
+    }
+    .container {
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+    .content { display: none; }
+    .content.active { display: block; }
+    h2 {
+      font-size: 1.2rem;
+      color: #1a1a2e;
+      margin-top: 36px;
+      margin-bottom: 10px;
+      border-left: 4px solid #e53935;
+      padding-left: 12px;
+    }
+    p { margin-bottom: 12px; color: #444; }
+    ul { margin: 8px 0 12px 24px; color: #444; }
+    ul li { margin-bottom: 6px; }
+    a { color: #e53935; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .updated {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 28px;
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: #aaa;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>WayNote</h1>
+  <p>Privacy Policy</p>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ===================== ITALIANO ===================== -->
+  <div id="it" class="content active">
+    <span class="updated">Ultimo aggiornamento: 12 marzo 2026</span>
+
+    <p>Benvenuto su <strong>WayNote</strong>. La presente Privacy Policy descrive come raccogliamo, utilizziamo e proteggiamo le informazioni degli utenti dell'applicazione mobile WayNote, disponibile su Android e iOS.</p>
+    <p>Sviluppatore: Giacomo Bei — Italia<br>
+    Contatto: <a href="mailto:info@waynote.fun">info@waynote.fun</a></p>
+
+    <h2>1. Dati che raccogliamo</h2>
+    <p>Raccogliamo le seguenti categorie di dati personali:</p>
+    <ul>
+      <li><strong>Dati di registrazione:</strong> nome utente, indirizzo email, password (cifrata). Se accedi tramite Google OAuth, raccogliamo nome, email e foto profilo forniti da Google.</li>
+      <li><strong>Contenuti caricati:</strong> foto e video caricati dall'utente nell'app, inclusi i metadati EXIF (data, ora, coordinate GPS) presenti nelle immagini.</li>
+      <li><strong>Dati di localizzazione:</strong> le coordinate GPS incorporate nelle foto (EXIF) vengono utilizzate per associare le foto alle tappe del viaggio. Non raccogliamo la posizione del dispositivo in tempo reale.</li>
+      <li><strong>Dati del profilo:</strong> nome utente, foto profilo, viaggi pubblici, follower e seguiti.</li>
+      <li><strong>Dati di pagamento:</strong> in caso di abbonamento Premium (€4,99/anno), i pagamenti vengono processati da Stripe. WayNote non memorizza dati della carta di credito.</li>
+      <li><strong>Dati di utilizzo:</strong> log di accesso, interazioni con l'app, errori tecnici.</li>
+      <li><strong>Token notifiche:</strong> token per l'invio di notifiche push tramite Expo Notifications.</li>
+    </ul>
+
+    <h2>2. Come utilizziamo i dati</h2>
+    <ul>
+      <li>Fornire e migliorare i servizi dell'app</li>
+      <li>Associare le foto alle tappe del viaggio tramite GPS</li>
+      <li>Generare video animati del viaggio</li>
+      <li>Mostrare profili pubblici e feed community (like ai viaggi, follower/seguiti)</li>
+      <li>Inviare notifiche push relative all'attività dell'account</li>
+      <li>Processare i pagamenti dell'abbonamento</li>
+      <li>Rispondere a richieste di assistenza</li>
+    </ul>
+
+    <h2>3. Condivisione dei dati</h2>
+    <p>Non vendiamo i tuoi dati a terzi. Condividiamo i dati solo con i seguenti fornitori di servizi:</p>
+    <ul>
+      <li><strong>Supabase</strong> – database e autenticazione (EU)</li>
+      <li><strong>Cloudflare R2</strong> – archiviazione foto e video</li>
+      <li><strong>AWS Lambda</strong> – generazione video</li>
+      <li><strong>Stripe</strong> – elaborazione pagamenti</li>
+      <li><strong>Google OAuth</strong> – accesso tramite account Google</li>
+      <li><strong>Expo / Firebase</strong> – notifiche push</li>
+      <li><strong>Mapbox</strong> – mappe e animazioni</li>
+    </ul>
+
+    <h2>4. Contenuti pubblici</h2>
+    <p>I viaggi che l'utente sceglie di rendere pubblici, incluse le foto associate, saranno visibili agli altri utenti nella sezione Community. Le coordinate GPS delle foto vengono mostrate solo a livello di città, mai come coordinate esatte.</p>
+
+    <h2>5. Abbonamento e pagamenti</h2>
+    <p>WayNote offre un abbonamento Premium al prezzo di <strong>€4,99/anno</strong>. I pagamenti vengono elaborati in modo sicuro da Stripe. Non memorizziamo i dati della carta di credito. Per informazioni sui rimborsi, contattaci a <a href="mailto:info@waynote.fun">info@waynote.fun</a>.</p>
+
+    <h2>6. Conservazione dei dati</h2>
+    <p>I tuoi dati vengono conservati finché il tuo account è attivo. Puoi richiedere la cancellazione dell'account e di tutti i dati associati inviando una email a <a href="mailto:info@waynote.fun">info@waynote.fun</a>. I dati verranno eliminati entro 30 giorni dalla richiesta.</p>
+
+    <h2>7. Sicurezza</h2>
+    <p>Adottiamo misure tecniche e organizzative per proteggere i tuoi dati, incluse connessioni HTTPS, cifratura delle password e accesso limitato ai dati sensibili.</p>
+
+    <h2>8. Diritti degli utenti (GDPR)</h2>
+    <p>In conformità al Regolamento Europeo sulla Protezione dei Dati (GDPR), hai diritto a:</p>
+    <ul>
+      <li>Accedere ai tuoi dati personali</li>
+      <li>Rettificare dati inesatti</li>
+      <li>Richiedere la cancellazione dei tuoi dati</li>
+      <li>Opporti al trattamento dei tuoi dati</li>
+      <li>Richiedere la portabilità dei dati</li>
+    </ul>
+    <p>Per esercitare questi diritti scrivi a <a href="mailto:info@waynote.fun">info@waynote.fun</a>.</p>
+
+    <h2>9. Minori</h2>
+    <p>WayNote non è destinata a utenti di età inferiore ai 13 anni. Non raccogliamo consapevolmente dati di minori. Se vieni a conoscenza che un minore ha fornito dati personali, contattaci immediatamente.</p>
+
+    <h2>10. Modifiche alla Privacy Policy</h2>
+    <p>Potremmo aggiornare questa Privacy Policy periodicamente. In caso di modifiche sostanziali, informeremo gli utenti tramite notifica nell'app o via email. L'uso continuato dell'app dopo le modifiche costituisce accettazione della nuova policy.</p>
+
+    <h2>11. Contatti</h2>
+    <p>Per qualsiasi domanda relativa alla presente Privacy Policy:<br>
+    Email: <a href="mailto:info@waynote.fun">info@waynote.fun</a></p>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div id="en" class="content">
+    <span class="updated">Last updated: March 12, 2026</span>
+
+    <p>Welcome to <strong>WayNote</strong>. This Privacy Policy describes how we collect, use, and protect information from users of the WayNote mobile application, available on Android and iOS.</p>
+    <p>Developer: Giacomo Bei — Italy<br>
+    Contact: <a href="mailto:info@waynote.fun">info@waynote.fun</a></p>
+
+    <h2>1. Data We Collect</h2>
+    <p>We collect the following categories of personal data:</p>
+    <ul>
+      <li><strong>Registration data:</strong> username, email address, password (encrypted). If you sign in via Google OAuth, we collect the name, email, and profile picture provided by Google.</li>
+      <li><strong>Uploaded content:</strong> photos and videos uploaded by the user, including EXIF metadata (date, time, GPS coordinates) embedded in images.</li>
+      <li><strong>Location data:</strong> GPS coordinates embedded in photos (EXIF) are used to associate photos with trip stops. We do not collect real-time device location.</li>
+      <li><strong>Profile data:</strong> username, profile picture, public trips, followers, and following.</li>
+      <li><strong>Payment data:</strong> for Premium subscriptions (€4.99/year), payments are processed by Stripe. WayNote does not store credit card information.</li>
+      <li><strong>Usage data:</strong> access logs, in-app interactions, technical errors.</li>
+      <li><strong>Push notification tokens:</strong> tokens used to send push notifications via Expo Notifications.</li>
+    </ul>
+
+    <h2>2. How We Use Your Data</h2>
+    <ul>
+      <li>Provide and improve app services</li>
+      <li>Associate photos with trip stops via GPS</li>
+      <li>Generate animated travel videos</li>
+      <li>Display public profiles and community feed (trip likes, followers/following)</li>
+      <li>Send push notifications related to account activity</li>
+      <li>Process subscription payments</li>
+      <li>Respond to support requests</li>
+    </ul>
+
+    <h2>3. Data Sharing</h2>
+    <p>We do not sell your data to third parties. We share data only with the following service providers:</p>
+    <ul>
+      <li><strong>Supabase</strong> – database and authentication (EU)</li>
+      <li><strong>Cloudflare R2</strong> – photo and video storage</li>
+      <li><strong>AWS Lambda</strong> – video generation</li>
+      <li><strong>Stripe</strong> – payment processing</li>
+      <li><strong>Google OAuth</strong> – sign-in via Google account</li>
+      <li><strong>Expo / Firebase</strong> – push notifications</li>
+      <li><strong>Mapbox</strong> – maps and animations</li>
+    </ul>
+
+    <h2>4. Public Content</h2>
+    <p>Trips that users choose to make public, including associated photos, will be visible to other users in the Community section. GPS coordinates from photos are displayed at city level only, never as exact coordinates.</p>
+
+    <h2>5. Subscription and Payments</h2>
+    <p>WayNote offers a Premium subscription at <strong>€4.99/year</strong>. Payments are securely processed by Stripe. We do not store credit card data. For refund inquiries, contact us at <a href="mailto:info@waynote.fun">info@waynote.fun</a>.</p>
+
+    <h2>6. Data Retention</h2>
+    <p>Your data is retained for as long as your account is active. You may request deletion of your account and all associated data by emailing <a href="mailto:info@waynote.fun">info@waynote.fun</a>. Data will be deleted within 30 days of the request.</p>
+
+    <h2>7. Security</h2>
+    <p>We implement technical and organizational measures to protect your data, including HTTPS connections, password encryption, and restricted access to sensitive data.</p>
+
+    <h2>8. User Rights (GDPR)</h2>
+    <p>In accordance with the General Data Protection Regulation (GDPR), you have the right to:</p>
+    <ul>
+      <li>Access your personal data</li>
+      <li>Rectify inaccurate data</li>
+      <li>Request deletion of your data</li>
+      <li>Object to data processing</li>
+      <li>Request data portability</li>
+    </ul>
+    <p>To exercise these rights, write to <a href="mailto:info@waynote.fun">info@waynote.fun</a>.</p>
+
+    <h2>9. Children</h2>
+    <p>WayNote is not intended for users under the age of 13. We do not knowingly collect data from minors. If you become aware that a minor has provided personal data, please contact us immediately.</p>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically. In case of material changes, we will notify users via in-app notification or email. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>11. Contact</h2>
+    <p>For any questions regarding this Privacy Policy:<br>
+    Email: <a href="mailto:info@waynote.fun">info@waynote.fun</a></p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 WayNote · <a href="mailto:info@waynote.fun">info@waynote.fun</a>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    document.querySelector(`[onclick="setLang('${lang}')"]`).classList.add('active');
+    document.documentElement.lang = lang;
+  }
+</script>
+
+</body>
+</html>
